@@ -1,0 +1,6 @@
+USE DataWarehouse;
+GO
+
+IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name='GOLD1')
+    EXEC('CREATE SCHEMA GOLD1');
+GO
